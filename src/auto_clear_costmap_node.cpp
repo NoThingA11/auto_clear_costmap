@@ -7,7 +7,7 @@ int main(int argc, char **argv){
 	ros::NodeHandle nh;
 	ros::service::waitForService("/move_base/clear_costmaps");
 	ros::ServiceClient clearClient = nh.serviceClient<std_srvs::Empty>("/move_base/clear_costmaps");
-    std_srvs::Empty srv;
+        std_srvs::Empty srv;
 	ros::Time begin = ros::Time::now();
   
 	//ros::Rate loop_rate(1);

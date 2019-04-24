@@ -9,14 +9,14 @@ Example. ####_ws/src
 
 run command in your terminal.
 
-git clone https://github.com/NoThingA11/auto_clear_costmap.git
+- git clone https://github.com/NoThingA11/auto_clear_costmap.git
 
-cd ..
+- cd ..
 
-catkin_make
+- catkin_make
 
 run command in your terminal for test.
 
-rosrun auto_clear_costmap auto_clear_costmap_node
+- rosrun auto_clear_costmap auto_clear_costmap_node
 
 You can see effect in RVIZ.

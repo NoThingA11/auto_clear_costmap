@@ -8,9 +8,6 @@ int main(int argc, char **argv){
 	ros::service::waitForService("/move_base/clear_costmaps");
 	ros::ServiceClient clearClient = nh.serviceClient<std_srvs::Empty>("/move_base/clear_costmaps");
         std_srvs::Empty srv;
-	ros::Time begin = ros::Time::now();
-  
-	//ros::Rate loop_rate(1);
 
 	while(ros::ok()){
 		clearClient.call(srv);
